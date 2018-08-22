@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="assets/img/Sigura.png" type="img/x-png">
+
+    <!-- Link Bulma  -->
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css'>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+
+    <!-- Fontes link, adiconar a todo o corpo da pagina-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="icomon/font.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Fica tranquilo. Deixa coma gente!</title>
+</head>
+
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/script.js"></script>
+
+    <!-- Inicio section principal -->
+    <section id="main" class="hero is-fullheight main">
+        <div id="flow">
+            <span class="flow-1"></span>
+            <span class="flow-2"></span>
+            <span class="flow-3"></span>
+        </div>
+        <header class="navbar is-fixed-top">
+            <div class="container">
+                <div class="navbar-brand">
+                    <div class="navbar-item ">
+                        <img src="assets/img/Sigura.png" alt="Logo">
+                    </div>
+                    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div id="navbarMenuHeroC" class="navbar-menu">
+                    <div class="navbar-end">
+                        <span class="navbar-item">
+                            <a class="button is-primary" href="#main">
+                                <span class="icon">
+                                    <img src="assets/img/home1.png">
+                                </span>
+                                <span>Home</span>
+                            </a>
+                        </span>
+                        <span id="btnContato" class="navbar-item">
+                            <a class="button is-primary " href="#contato">
+                                <span class="icon">
+                                    <img src="assets/img/email2.png">
+                                </span>
+                                <span>Contato</span>
+                            </a>
+                        </span>
+                        <span id="btnLogin" class="navbar-item">
+                            <a class="button is-primary" href="#login">
+                                <span class="icon">
+                                    <img src="assets/img/outline_person_white_18dp.png">
+                                </span>
+                                <span>Login</span>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Titulo e subtitulo centralizado -->
+        <div class="hero-body ">
+            <div class="inner"></div>
+            <div class="container has-text-centered">
+                <h1 class="title is-2 colorTitle is-outlined">
+                    Não tem onde deixar seus pertences
+                    <br/> para curtir a praia?
+                </h1>
+            </div>
+        </div>
+        <div class="arrow-bottom">
+            <a class="btn-arrow-bottom">
+                <i class="fas fa-arrow-down"></i>
+            </a>
+        </div>
+        <!-- Fim do Titulo centralizado -->
+    </section>
+    <!-- Fim da section principal -->
+
+
+    <!-- MODAL BTN -->
+
+    <!-- Modal de cadastro e login -->
+    <div  class="modal login">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <div class="box">
+                    <h2 class="title">Login</h2>
+                    <p class="subtitle">Acesse sua conta ou cadastre-se agora.</p>
+                    <img class="imgPerson" src="assets/img/iconPerson.png" alt="">
+                <div class="field">
+                    <label class="label">Usuário</label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Digite seu nome de usuário">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label">Senha</label>
+                    <div class="control">
+                        <input class="input" type="password" placeholder="Digite aqui sua senha">
+                    </div>
+                </div>
+                <div class="field">
+                        <label class="checkbox">
+                            <input type="checkbox"> Lembrar de mim
+                        </label>
+                    </div>
+                <div class="field is-grouped">
+                    <div class="control">
+                        <a href="perfil.html"><button class="button is-link">Entrar</button></a>
+                    </div>
+                    <div class="control">
+                        <button class="button is-text">Quero me cadastrar!</button>
+                    </div>
+                    <div class="control">
+                        <button class="button is-text">Esqueci a senha</button>
+                    </div>
+                    <div class="control">
+                        <button class="button is-text">Preciso de ajuda</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+    <!-- Fim do modal de cadastro e login -->
+
+    <!-- Inicio modal contato -->
+    <div class="modal contato">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <!-- Conteudo do modal -->
+            <div class="box">
+                <div class="field">
+                    <label class="label">Nome</label>
+                    <div class="control has-icons-left has-icons-right">
+                        <input class="input" type="text" placeholder="Nome">
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-user"></i>
+                        </span>
+                        <span class="icon is-small is-right">
+                            <i class="fas fa-check"></i>
+                        </span>
+                    </div>
+                    <!-- <p class="help is-success">This username is available</p> -->
+                </div>
+
+                <div class="field">
+                    <label class="label">Email</label>
+                    <div class="control has-icons-left has-icons-right">
+                        <!-- Validação do email "is-sucess" e placeholder da caixa "value="denilson_medrano@hotmail.com"-->
+                        <input class="input" type="email" placeholder="Email">
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                        <!-- <span class="icon is-small is-right">
+<i class="fas fa-exclamation-triangle"></i>
+</span> -->
+                    </div>
+                    <!-- <p class="help is-danger">This email is invalid</p> -->
+                </div>
+
+                <div class="field">
+                    <label class="label">Qual é o assunto?</label>
+                    <div class="control">
+                        <div class="select">
+                            <select>
+                                <option>Selecione </option>
+                                <option>Parcerias</option>
+                                <option>Financeiro</option>
+                                <option>Desenvolvedor</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label">Mensagem</label>
+                    <div class="control">
+                        <textarea class="textarea" placeholder="Textarea"></textarea>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <div class="control">
+                        <label class="checkbox">
+                            <input type="checkbox"> Eu concordo com os
+                            <a href="#">Termos e condições</a>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <p>Deseja receber nossas notificações no email?</p>
+                    <div class="control">
+                        <label class="radio">
+                            <input type="radio" name="question"> Sim
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="question"> Não
+                        </label>
+                    </div>
+                </div>
+
+                <div class="field is-grouped">
+                    <div class="control">
+                        <button class="button is-primary is-text">Enviar</button>
+                    </div>
+                    <div class="control">
+                        <button class="button is-text">Cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+    <!-- FIM modal contato -->
+    <!-- FIM MODAL -->
+
+
+
+    <!-- Inicio Section do Video -->
+    <section id="animation" class="animation-content">
+        <h2 class="description-title">É simples usar...</h2>
+        <iframe width="640" height="360" src="https://www.powtoon.com/embed/ePGolkBuLvP/" frameborder="0"></iframe>
+    </section>
+    <!-- Fim Section do Video -->
+
+    <!-- Inicio da section Cards -->
+    <section>
+        <section class="description-content">
+            <div class="description">
+                <h2 class="description-title">Resolvemos seu problema</h2>
+                <p>Deixamos você mais tranquilo através desses três pilares.</p>
+            </div>
+            <div class="cards-content">
+                <div class="card-info">
+                    <div class="card-icone">
+                        <img src="assets/img/imgLocker.png" alt="">
+                    </div>
+                    <div class="card-description">
+                        <h2>Segurança</h2>
+                        <p>Deixamos seu passeio mais seguro cuidando de seus pertences enquanto você aproveita seu dia.</p>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <div class="card-icone">
+                        <img src="assets/img/iconPayment.png" alt="">
+                    </div>
+                    <div class="card-description">
+                        <h2>Tecnologia</h2>
+                        <p>Todo o processo de pagamento é feito através do aplicativo.</p>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <div class="card-icone">
+                        <img src="assets/img/iconLocker.png" alt="">
+                    </div>
+                    <div class="card-description">
+                        <h2>Facilidade</h2>
+                        <p>Você seleciona a unidade, guarda seus pertences e pronto. Fica tranquilo. Deixa com a gente!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- Fim da section Cards -->
+
+
+    <!-- Inicio Menu Social -->
+    <section>
+        <div class="social-bar ">
+            <a href="#" class="icone icone-facebook" target="_blank"></a>
+            <a href="#" class="icone icone-twitter" target="_blank"></a>
+            <a href="#" class="icone icone-youtube" target="_blank"></a>
+            <a href="#" class="icone icone-instagram" target="_blank"></a>
+        </div>
+    </section>
+    <!-- Fim Menu Social-->
+
+    <!-- Inicio App-->
+    <section>
+        <div class="startApp">
+            <p>
+                <strong>Baixe e abra sua conta. </strong>
+            </p>
+            <div class="buttonApp">
+                <a href="https://play.google.com/store">
+                    <picture>
+                        <!-- Possibilidade de adiconar imagens de acordo com o tipo de dispositivo-->
+                        <img src="assets/img//Google/googleicon.png" alt="Android">
+                    </picture>
+                </a>
+
+                <a href="https://itunes.apple.com/br/app/apple-store/id375380948?mt=8">
+                    <picture>
+                        <!-- Possibilidade de adiconar imagens de acordo com o tipo de dispositivo-->
+                        <img src="assets/img//Apple/appleicon.png" alt="Apple">
+                    </picture>
+                </a>
+
+            </div>
+        </div>
+    </section>
+    <!-- Fim App  -->
+
+    <!-- Inicio do footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="content has-text-centered">
+                <div id="mobfooter" class="soc fo-icon">
+                    <a href="#">
+                        <i>
+                            <img src="assets/img/iconesSocial/facebook.png" alt="facebook">
+                        </i>
+                    </a>
+                    <a href="#">
+                        <i>
+                            <img src="assets/img/iconesSocial/twitter.png" alt="twitter">
+                        </i>
+                    </a>
+                    <a href="#">
+                        <i>
+                            <img src="assets/img/iconesSocial/youtube.png" alt="youtube">
+                        </i>
+                    </a>
+                    <a href="#">
+                        <i>
+                            <img src="assets/img/iconesSocial/instagram.png" alt="instagram">
+                        </i>
+                    </a>
+                </div>
+                <br>
+                <p>
+                    <strong>© 2018.</strong> Todos os direitos reservados. Sigura - São Paulo, s/nº, Bela Vista, São Paulo/SP, 08050-900,
+                    Brasil. CNPJ: 98.989.989.9898-98
+                    <br>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- Fim do footer -->
+
+
+</body>
+
+</html>
