@@ -411,4 +411,13 @@ iframe{
 	flex-wrap: wrap;
 }
 
+@media(max-width:768px){
+	.infos{
+		flex-direction: column;
+	}
+	iframe{
+		margin-top: 2em;
+	}
+}
+
 /* verde -> rgb(18, 223, 206) */
